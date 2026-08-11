@@ -70,7 +70,7 @@ st.markdown(
 )
 
 st.title("English \u2192 Arabic Translator")
-st.caption("Fine-tuned OPUS-MT (Helsinki-NLP/opus-mt-en-ar) \u2014 graduation project demo")
+st.caption("Fine-tuned OPUS-MT (Helsinki-NLP/opus-mt-en-ar) \u2014 demo")
 
 tokenizer, model, device = load_model()
 
