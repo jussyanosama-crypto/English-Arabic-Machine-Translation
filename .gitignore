@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Environment variables
+.env
+
+# Model weights - these live on the Hugging Face Hub, not in this repo.
+# If you ever experiment locally with a downloaded copy, keep it out of git.
+finetuned_model/
+*.bin
+*.safetensors
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

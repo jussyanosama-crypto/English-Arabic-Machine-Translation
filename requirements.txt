@@ -1,0 +1,10 @@
+# CPU-only PyTorch build - much smaller/faster to install than the default
+# CUDA build, and Streamlit Community Cloud (and most simple hosts) has no
+# GPU anyway. Safe to remove this line if you deploy somewhere with a GPU.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+streamlit>=1.32
+torch>=2.2
+transformers>=4.40
+sentencepiece>=0.1.99
+huggingface-hub>=0.23
