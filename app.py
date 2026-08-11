@@ -61,6 +61,7 @@ st.markdown(
         padding: 1rem;
         border-radius: 0.5rem;
         background-color: #f0f2f6;
+        color: #222222;
         min-height: 3rem;
         white-space: pre-wrap;
     }
