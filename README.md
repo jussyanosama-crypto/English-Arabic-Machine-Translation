@@ -28,7 +28,7 @@ login()  # paste a Hugging Face access token with "write" permission
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 MODEL_PATH = "/content/drive/MyDrive/EN_AR_Machine_Translation/best_model"  # or your local path
-REPO_ID = "your-username/opus-mt-en-ar-finetuned"
+REPO_ID = "jussyanosama/opus-mt-en-ar-finetuned"
 
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_PATH)
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
@@ -65,7 +65,7 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 # either edit MODEL_REPO_ID directly in app.py, or:
-export MODEL_REPO_ID="your-username/opus-mt-en-ar-finetuned"
+export MODEL_REPO_ID="jussyanosama/opus-mt-en-ar-finetuned"
 
 streamlit run app.py
 ```
@@ -85,7 +85,7 @@ parameter model, not NLLB).
 3. Point it at your repo and `app.py`.
 4. Under **Advanced settings → Secrets**, add:
    ```
-   MODEL_REPO_ID = "your-username/opus-mt-en-ar-finetuned"
+   MODEL_REPO_ID = "jussyanosama/opus-mt-en-ar-finetuned"
    ```
    (Optional if you already hardcoded it in `app.py` — the environment
    variable just makes it easy to change later without a new commit.)
